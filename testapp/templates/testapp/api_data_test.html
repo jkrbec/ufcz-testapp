@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Data Test</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <form method="post" id="fetchForm">
+        {% csrf_token %}  <!-- Include CSRF token -->
+        <button type="button" id="fetchButton">Fetch API Data: UFC Champions</button>
+        <p>After clicking the button, the API will be fetched and the data will be displayed below</p>
+    </form>
+    <div id="dataContainer"></div>
+    <div id="messageContainer"></div>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

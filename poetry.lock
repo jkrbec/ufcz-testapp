@@ -66,6 +66,14 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "python-decouple"
+version = "3.8"
+description = "Strict separation of settings from code."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pytz"
 version = "2023.3.post1"
 description = "World timezone definitions, modern and historical"
@@ -137,7 +145,7 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "bdada6838d1d3c00ecce19eb4d9843c8a995da31e7baa261a5a9836df7ee3b61"
+content-hash = "afb393a847a8fec8ac1e7e821469b150b78dfc74930af3a92cd7bbcfa2fe23ec"
 
 [metadata.files]
 asgiref = []
@@ -146,6 +154,7 @@ charset-normalizer = []
 django = []
 djangorestframework = []
 idna = []
+python-decouple = []
 pytz = []
 requests = []
 sqlparse = []
